@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <sp-heading>Keyframe on selected track item</sp-heading>
+    </header>
+
+    <main>
+      <sp-body>
+        <ol>
+          <li>1. Click the first button below to create a keyframe on the selected track item - there will be an error in the console.</li>
+          <li>2. Click the second one to create a keyframe on the first track item - the scale value will be set correctly to 200.</li>
+          <li>3. Click the first button again - this time there is no error, and the value is set to 50.</li>
+        </ol>
+      </sp-body>
+    </main>
+
+    <footer>
+      <sp-button id="btn-selected">Create on selected track item</sp-button>
+      <sp-button id="btn-first">Create on first track item</sp-button>
+    </footer>
+  </body>
+</html>
