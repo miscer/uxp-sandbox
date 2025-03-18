@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <sp-heading>Long compound action</sp-heading>
+    </header>
+
+    <main>
+      <sp-body>
+        The first slider tries to group the value change actions into a single compound action, in order to reduce the number of undo steps (history entries).
+      </sp-body>
+
+      <sp-slider id="grouped-slider" min="0" max="100" value="50"></sp-slider>
+
+      <sp-body>
+        The second slider executes the value change actions individually, each in their own transaction. This creates a lot of unnecessary undo steps.
+      </sp-body>
+
+      <sp-slider id="immediate-slider" min="0" max="100" value="50"></sp-slider>
+    </main>
+  </body>
+</html>
